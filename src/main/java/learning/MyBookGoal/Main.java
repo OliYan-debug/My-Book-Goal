@@ -17,5 +17,7 @@ public class Main {
         var book = new Book(bookName, pages, minutesPerPage, daysToFinish);
         System.out.println(book);
         System.out.println(book.pagesPerDayToFinishTheBook());
+        System.out.println(book.timeSpentDaily());
+        System.out.println(book.timeSpentInTheBook());
     }
 }

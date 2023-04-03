@@ -19,6 +19,13 @@ public class Book{
         this.timePerPage = timePerPage;
     }
 
+    public String pagesPerDayToFinishTheBook(){
+        int dailyPages = (int) Math.ceil((double) pages/daysToFinish);
+        return "Reading aprox. " + dailyPages
+                + " pages per day you will finish "+ this.book + " in "
+                + daysToFinish + " days";
+    }
+
     @Override
     public String toString() {
         return "Book{" +
